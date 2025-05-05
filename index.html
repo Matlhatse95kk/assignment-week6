@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Event Handling Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive JS Project</h1>
+
+  <button id="clickMeBtn">Click Me!</button>
+  <p id="message"></p>
+
+  <p>Press any key: <span id="keyOutput"></span></p>
+
+  <button id="doubleClickBtn">Double-Click Me!</button>
+  <p id="doubleClickMsg"></p>
+
+  <button id="longPressBtn">Press and Hold Me!</button>
+  <p id="longPressMsg"></p>
+
+  <button id="interactiveBtn">Click to Change Me</button>
+
+  <div id="slideshow">
+    <img id="slideImage" src="image1.jpg" alt="Slideshow Image" width="300">
+    <br>
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <div class="tabs">
+    <button class="tabBtn" onclick="openTab('tab1')">Tab 1</button>
+    <button class="tabBtn" onclick="openTab('tab2')">Tab 2</button>
+  </div>
+  <div id="tab1" class="tabContent">
+    <p>This is Tab 1 content.</p>
+  </div>
+  <div id="tab2" class="tabContent" style="display: none;">
+    <p>This is Tab 2 content.</p>
+  </div>
+
+  <form id="myForm">
+    <label>Email: <input type="email" id="email" required></label><br>
+    <label>Password: <input type="password" id="password" required></label><br>
+    <button type="submit">Submit</button>
+    <p id="formMessage"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
